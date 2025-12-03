@@ -1,0 +1,22 @@
+[
+  {
+    "title":"3 ოთახიანი ბინა ბულვართან",
+    "lat":41.6486,
+    "lng":41.6363,
+    "area":"85",
+    "rooms":"3",
+    "price":"1200",
+    "photo":"https://example.com/photo1.jpg",
+    "contact":"+995592032999"
+  },
+  {
+    "title":"სტუდიო near plaza",
+    "lat":41.6400,
+    "lng":41.6300,
+    "area":"35",
+    "rooms":"1",
+    "price":"500",
+    "photo":"",
+    "contact":"+995568827470"
+  }
+]
