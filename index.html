@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rentumi MiniApp</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🏢 ბინები / Квартиры — ბათუმი</h1>
+      <div id="controls">
+        <button id="addListingBtn">📤 განცხადება დამატება</button>
+        <input id="filterPriceMin" placeholder="Min ₾" type="number"/>
+        <input id="filterPriceMax" placeholder="Max ₾" type="number"/>
+        <button id="applyFilter">🔎 ფილტრი</button>
+      </div>
+    </header>
+
+    <div id="map"></div>
+
+    <div id="modal" class="hidden">
+      <div class="modal-content">
+        <h2>📋 განცხადების დამატება / Добавить объявление</h2>
+        <label>🏷️ შობა / Заголовок<br/><input id="f_title"/></label>
+        <label>📍 ლოკაცია (lat,lng)<br/><input id="f_coord" placeholder="41.6486,41.6363"/></label>
+        <label>📏 ფართობი / Площадь<br/><input id="f_area"/></label>
+        <label>🛏️ ოთახები / Комнат<br/><input id="f_rooms"/></label>
+        <label>💵 ფასი (lar)<br/><input id="f_price"/></label>
+        <label>🔗 ფოტო (URL)<br/><input id="f_photo"/></label>
+        <label>📞 კონტაქტი / Контакт<br/><input id="f_contact"/></label>
+        <div class="modal-actions">
+          <button id="sendListing">✉️ გამოგზავნა</button>
+          <button id="closeModal">✖ დახურვა</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
